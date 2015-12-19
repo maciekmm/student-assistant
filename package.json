@@ -1,0 +1,13 @@
+{
+  "name": "StudentAssistant",
+  "license": "MIT",
+  "description": "Integrates with student platforms notifying you",
+  "version": "0.0.1",
+  "scripts": {
+    "build": ""
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.0",
+    "webpack": "^1.12.9"
+  }
+}
