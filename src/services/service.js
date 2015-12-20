@@ -1,16 +1,24 @@
-export default class Service {
+var request = require("request");
+
+export class Param {
+	constructor(name, type) {
+		this.name = name;
+		this.type = type;
+	}
+}
+
+export class Service {
 	
-	constructor(name, language) {
+	constructor(name, language, params) {
 		this.name = name;
 		this.language = language;
-		this.branch = null;
+		this.params = params;
+		this._request = request.defaults({jar: true});
 	}
 	
 	login(params) { throw "Not implemented"; }
 	
 	logout() { throw "Not implemented"; }
-	
+
 	get schools() { throw "Not implemented"; }
-	
-	get branches() { throw "Not implemented"; }
 }
